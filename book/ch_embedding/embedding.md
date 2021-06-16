@@ -51,9 +51,9 @@ Biểu diễn các vector embedding trong không gian
 
 +++
 
-Với một từ điển bất kỳ với $N$ từ $(w_0, w_1, \dots, w_{N-1})$. Giả sử số chiều của không gian embedding là $d$, ta có thể biểu diễn toàn bộ các embedding cho $N$ từ này dưới dạng một ma trận $\mathbf{E} \in \mathbb{R}^{N\times k}$ với hàng thứ $i$ là biểu diễn embedding cho từ $w_{i-1}$.
+Với một từ điển bất kỳ với $N$ từ $(w_0, w_1, \dots, w_{N-1})$. Giả sử số chiều của không gian embedding là $d$, ta có thể biểu diễn toàn bộ các embedding cho $N$ từ này dưới dạng một ma trận $\mathbf{E} \in \mathbb{R}^{N\times d}$ với hàng thứ $i$ là biểu diễn embedding cho từ $w_{i-1}$.
 
-Nếu vector $\mathbf{o}_i \in \mathbb{R}^{N \times 1}$ là biểu diễn one-hot của từ $w_i$, ta có ngay $\mathbf{e} = \mathbf{o}_i^T\mathbf{E} \in \mathbb{R}^{1 \times k}$  là biểu diễn embedding của từ đó.
+Nếu vector $\mathbf{o}_i \in \mathbb{R}^{N \times 1}$ là biểu diễn one-hot của từ $w_i$, ta có ngay $\mathbf{e} = \mathbf{o}_i^T\mathbf{E} \in \mathbb{R}^{1 \times d}$  là biểu diễn embedding của từ đó.
 
 +++
 
